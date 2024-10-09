@@ -1,0 +1,97 @@
+{
+  "Product": [
+    {
+      "id": 1,
+      "name": "Product 1",
+      "imgtyle": "image1.png",
+      "description": "Description 1"
+    },
+    {
+      "id": 2,
+      "name": "Product 2",
+      "imgtyle": "image2.png",
+      "description": "Description 2"
+    }
+  ],
+  "CueType": [
+    {
+      "id": 1,
+      "name": "Cue Type 1",
+      "imgtyle": "cue_image1.png",
+      "description": "Cue Type 1 Description",
+      "product_id": 1
+    }
+  ],
+  "Cue": [
+    {
+      "id": 1,
+      "name": "Cue 1",
+      "description": "Cue 1 Description",
+      "img": "cue1.png",
+      "price": 100.0,
+      "cue_type_id": 1
+    }
+  ],
+  "Account": [
+    {
+      "id": 1,
+      "username": "user1",
+      "password": "password1",
+      "email": "user1@example.com"
+    }
+  ],
+  "Cart": [
+    {
+      "id": 1,
+      "account_id": 1,
+      "total_price": 250.0,
+      "created_at": "2023-06-01T10:00:00Z"
+    }
+  ],
+  "CartItem": [
+    {
+      "id": 1,
+      "cart_id": 1,
+      "cue_id": 1,
+      "quantity": 2
+    },
+    {
+      "id": 2,
+      "cart_id": 1,
+      "cue_id": 2,
+      "quantity": 1
+    }
+  ],
+  "Invoice": [
+    {
+      "id": 1,
+      "account_id": 1,
+      "total_price": 250.0,
+      "created_at": "2023-06-02T10:00:00Z"
+    }
+  ],
+  "InvoiceItem": [
+    {
+      "id": 1,
+      "invoice_id": 1,
+      "cue_id": 1,
+      "quantity": 2,
+      "price": 100.0
+    },
+    {
+      "id": 2,
+      "invoice_id": 1,
+      "cue_id": 2,
+      "quantity": 1,
+      "price": 150.0
+    }
+  ],
+  "Payment": [
+    {
+      "id": 1,
+      "invoice_id": 1,
+      "amount": 250.0,
+      "payment_date": "2023-06-02T11:00:00Z"
+    }
+  ]
+}
